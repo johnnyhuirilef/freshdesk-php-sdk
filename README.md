@@ -1,16 +1,11 @@
 # Freshdesk PHP SDK API v2 
 
-[![Build Status](https://travis-ci.org/mpclarkson/freshdesk-php-sdk.svg?branch=master)](https://travis-ci.org/mpclarkson/freshdesk-php-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpclarkson/freshdesk-php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpclarkson/freshdesk-php-sdk/?branch=master)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/5cb7004a-ac48-4fe2-88a4-79341e3c03d6.svg)](https://insight.sensiolabs.com/projects/5cb7004a-ac48-4fe2-88a4-79341e3c03d6)
-[![Packagist](https://img.shields.io/packagist/v/mpclarkson/freshdesk-php-sdk.svg)](https://packagist.org/packages/mpclarkson/freshdesk-php-sdk)
-
 This is a PHP 5.5+ SDK for the [Freshdesk](https://www.freshdesk.com) API v2.
 
 If you have questions, please contact me or open an issue on GitHub.
 
 ## Quick Start
-```phpg
+```php
 require __DIR__ . '/vendor/autoload.php';
 use \Freshdesk\Api;
 
@@ -26,24 +21,18 @@ $existing = $api->tickets->view($id);
 //Responses are simple arrays, e.g.:
 $id = $existing['id'];
 $first = $all[0];
-
 ```
-
-## Framework Integration
-
-- Symfony - [FreshdeskBundle](https://github.com/mpclarkson/freshdesk-bundle) 
-- Laravel/Lumen - [Freshdesk Larvel Service Provider](https://github.com/mpclarkson/freshdesk-laravel) .
 
 ## Installation
 
 To integrate this library into your application, use [Composer](https://getcomposer.org).
 
-Add `mpclarkson/freshdesk-php-sdk` to your **composer.json** file:
+Add `enius/freshdesk-php-sdk` to your **composer.json** file:
 
 ```json
 {
     "require": {
-        "mpclarkson/freshdesk-php-sdk": "dev-master"
+        "enius/freshdesk-php-sdk": "dev-master"
     }
 }
 ```
@@ -144,26 +133,3 @@ $tickets = $this->tickets->view(['company_id' => $companyId]);
 
 Please read the Freshdesk documentation for further information on
 filtering `GET` requests.
-
-## Contributing
-
-This is a work in progress and PRs are welcome. Please read the 
-[contributing guide](.github/CONTRIBUTING.md).
-
-Nearly all api calls are available except for the `Solutions` and `Surveys`, 
-which Freshdesk has not yet implemented.
-
-- [ ] Solutions
-- [ ] Surveys
-- [ ] Uploading files is not yet supported
-- [ ] More tests. You can never have enough!
-- [ ] Nicer documentation
-
-## Author
-
-The library was written and maintained by [Matthew Clarkson](http://mpclarkson.github.io/) 
-from [Hilenium](https://hilenium.com).
-
-## Reference
-
-* [Freshdesk API Documentation](https://developer.freshdesk.com/api/)

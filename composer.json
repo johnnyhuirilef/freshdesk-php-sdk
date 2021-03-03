@@ -1,8 +1,8 @@
 {
     "name": "mpclarkson/freshdesk-php-sdk",
-    "description": "PHP SDK for the Freshdesk API (v2)",
+    "description": "PHP SDK for the Freshdesk API (v2) fork mpclarkson/freshdesk-php-sdk",
     "type": "library",
-    "homepage": "https://github.com/mpclarkson/freshdesk-php-sdk",
+    "homepage": "https://github.com/johnnyhuirilef/freshdesk-php-sdk",
     "keywords": ["freshdesk", "customer service", "support", "help desk", "api"],
     "license": "MIT",
     "authors": [
@@ -10,11 +10,15 @@
             "name": "Matthew Clarkson",
             "email": "mpclarkson@hilenium.com",
             "homepage": "http://mpclarkson.github.io/"
+        },
+        {
+            "name": "Johnny Huirilef",
+            "email": "johnny@codelovers.cl"
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "guzzlehttp/guzzle": ">=4.0,<7.0"
+        "php": ">=7.2.0",
+        "guzzlehttp/guzzle": ">=4.0,<8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*",
